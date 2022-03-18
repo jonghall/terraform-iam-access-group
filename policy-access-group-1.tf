@@ -1,9 +1,9 @@
 resource "ibm_iam_access_group" "res_ag_1" {
-  name        = var.project + "_" + var.ag1
+  name        = join("",[var.project,"_",var.ag1])
   description = "Access group for OpenShift cluster administrators"
 }
 
-resource "ibm_iam_access_group_policy" "res_ag_policy1" {
+resource "ibm_iam_access_group_policy" "res_ag1_policy1" {
 
   access_group_id = ibm_iam_access_group.res_ag_1.id
   roles           = ["Administrator", "Manager"]
@@ -13,7 +13,7 @@ resource "ibm_iam_access_group_policy" "res_ag_policy1" {
   }
 }
 
-resource "ibm_iam_access_group_policy" "res_ag_policy2" {
+resource "ibm_iam_access_group_policy" "res_ag1_policy2" {
 
   access_group_id = ibm_iam_access_group.res_ag_1.id
   roles           = ["Administrator", "Manager"]
@@ -23,7 +23,7 @@ resource "ibm_iam_access_group_policy" "res_ag_policy2" {
   }
 }
 
-resource "ibm_iam_access_group_policy" "res_ag_policy3" {
+resource "ibm_iam_access_group_policy" "res_ag1_policy3" {
 
   access_group_id = ibm_iam_access_group.res_ag_1.id
   roles           = ["Administrator", "Manager"]
@@ -33,7 +33,7 @@ resource "ibm_iam_access_group_policy" "res_ag_policy3" {
   }
 }
 
-resource "ibm_iam_access_group_policy" "res_ag_policy4" {
+resource "ibm_iam_access_group_policy" "res_ag1_policy4" {
 
   access_group_id = ibm_iam_access_group.res_ag_1.id
   roles           = ["Administrator", "Manager"]
@@ -43,7 +43,7 @@ resource "ibm_iam_access_group_policy" "res_ag_policy4" {
   }
 }
 
-resource "ibm_iam_access_group_policy" "res_ag_policy5" {
+resource "ibm_iam_access_group_policy" "res_ag1_policy5" {
 
   access_group_id = ibm_iam_access_group.res_ag_1.id
   roles           = ["Administrator", "Manager"]
@@ -53,7 +53,7 @@ resource "ibm_iam_access_group_policy" "res_ag_policy5" {
   }
 }
 
-resource "ibm_iam_access_group_policy" "res_ag_policy6" {
+resource "ibm_iam_access_group_policy" "res_ag1_policy6" {
 
   access_group_id = ibm_iam_access_group.res_ag_1.id
   roles           = ["Administrator", "Manager"]

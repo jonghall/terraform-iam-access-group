@@ -1,6 +1,6 @@
 variable project {
   type = string
-  default = "Project1"
+  default = "MyProject1"
 }
 
 variable ag1 {
@@ -13,4 +13,7 @@ variable ag2 {
   default = "Users"
 }
 
-
+variable ag3 {
+  type    = string
+  default = "Operators"
+}
