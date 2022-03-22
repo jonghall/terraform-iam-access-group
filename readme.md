@@ -1,4 +1,4 @@
-# Sample IBM Cloud Terraform exmaple for creating Access Groups
+# Sample IBM Cloud Terraform example for creating Access Groups
 
 ## Purpose
 
